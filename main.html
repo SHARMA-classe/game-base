@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="free game,gamebase,game base,free platform ,woc, iitism,IITISM,Tank ">
+    <meta name="author" content="Aman Kanojiya">
+    <title>GameMain</title>
+    <link rel="icon" href="photos/logo.png">
+    <link rel="stylesheet" href="style/loader.css">
+    <link rel="stylesheet" href="style/main.css">
+    <!-- for size---------------------------------- -->
+    <link rel="stylesheet" href="style/nav.css">
+</head>
+<body onselectstart="return false">
+    <!-- loader part------------------------------------------------------- -->
+    <div class="preloader" id="preloader">
+        <div class="loader" id="loader"></div></div>
+    <!-- top part navigation----------------------------------------------- -->
+    <a href="user.html" class="user_prof">
+        <img src="photos/user.png" alt="">
+    </a>
+    <div class="top">
+        <div class="first tilt" id="first_m">
+            <a href="about.html" class="hover_a">About Us</a>
+            <a href="help.html" class="hover_a"> Contact</a>
+        </div>
+        <a href="main.html"><img src="photos/logo.png" alt="" class="logo" id="logo_m"></a>
+        <div class="second  tilt" id="second_m">
+            <div id="search_now" style="display: flex; cursor: pointer;">
+            <img src="photos/search.svg"  class="search_icon">
+            <p class="hover_a">Search</p>
+        </div>
+        </div>
+    </div>
+    <!-- top if size is smaller then 850 px ------------------------------------>
+    <nav id="nav_ham" class="nav_ham">
+        <a href="main.html"><img src="photos/logo.png" alt="" class="logo" id="logo_m"></a>
+        <ul class="navlinks">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="help.html">Contact</a></li>
+            <li  id="search_now_ham"><div>Search</div></li>
+        </ul>
+        <div class="burger">
+            <div class="line1" draggable="true"></div>
+            <div class="line2" draggable="true"></div>
+            <div class="line3" draggable="true"></div>
+        </div>
+    </nav>
+    <!-- search system rexxpect to top ---------------------------------- -->
+    <div class="search" id="search">
+        <div class="search_text" id="search_text">
+            <img src="photos/search.svg" class="search_icon_inp" alt="" srcset="">
+            <input type="search" name="search" id="search_text_inp" class="search_text_inp" placeholder="Search">
+        </div>
+        <div class="search_res" id="search_res">
+            <a href="help.html" style="text-decoration: none; color: black;" class="search_res_game">
+                <img src="photos/facebook.png" alt="">
+                <h3>This is facebook game</h3>
+            </a>
+        </div>
+        <div class="close_sea" id="close_sea">
+            <img src="photos/close.png" id="close_icon_inp" class="close_icon_inp" alt="" srcset="">
+        </div>
+    </div>
+    <!-- edit game block-------------------------------------------------- -->
+    <div class="edit" id="edit">
+        <input type="text" id="editgame_name" placeholder="Name" autocomplete="off" class="input edit_inp">
+        <input type="url" id="editgame_link" placeholder="Game Link" autocomplete="off" class="input edit_inp">
+        <input type="url" id="editgame_imagelink" placeholder="Game Image Link" autocomplete="off" class="input edit_inp">
+        <textarea type="text" id="editgame_description" placeholder="Game Description" cols="30" rows="10" autocomplete="off" class="input edit_inp"></textarea>
+        <div class="edit_btn">
+        <div class="ok_edit button edit_in" id="ok_edit">Edit</div>
+        <div class="cancel_edit button edit_in" id="cancel_edit">Cancel</div>
+    </div>
+    </div>
+    <!-- side social media links---------------------------------------------- -->
+    <div class="clip" id="social">
+        <a href="https://www.instagram.com/invites/contact/?i=vcd3ob07f347&utm_content=43fmjm3" class="link_social" target="_blank"><img src="photos/instagram.png" alt="" class="image_social"></a>
+        <a href="https://www.facebook.com/aman.kanojiya.792303" class="link_social" target="_blank"><img src="photos/facebook.png" alt="" class="image_social"></a>
+        <a href="https://www.linkedin.com/in/aman-kanojiya-782263188" class="link_social" target="_blank"><img src="photos/linkedin.png" alt="" class="image_social"></a>
+    </div>
+    <!-- main screen ------------------------------------------------------ -->
+    <div class="main" id="main">
+        <h1 id="main_text">Awesome Gaming Website</h1>
+    </div>
+    <!-- <div class="check"></div> -->
+    <!-- new game section----------------------------------------------------- -->
+<div id="growmore">
+    <div class="game_glass">
+        <h3 class="heading_game_glass">NEW</h3>
+        <div class="border_bottom"></div>
+    <div class="main_container" id="main_container_new">
+    </div>
+</div>
+<!-- trensing game section ------------------------------------------------------ -->
+    <div class="game_glass">
+        <h3 class="heading_game_glass">Trending</h3>
+        <div class="border_bottom"></div>
+        <div class="main_container" id="main_container_trend">
+            <!-- <div class="card tilt" id="card-1">
+                <div class="immage_con">
+                    <img src="photos/bg-story.7.jpg" alt="IMAGE NOT FOUND">
+                    <div>TRENDING</div>
+                </div>
+                <div class="game_con">
+                    <div class="game_name">
+                        MARIO
+                        <div class="admin_edit" id="admin_edit">
+                        <img src="photos/edit.png" alt=""  class="image_edit 02" onclick="edit(this.id)" id="only_admin_icon_edit_2">
+                        <img src="photos/delete.png" alt="" class="image_edit 02"  onclick="delet(this.id)" id="only_admin_icon_del_2">
+                    </div>
+                    </div>
+                    <div class="game_info">
+                        <div class="rate">4.0   rating</div>
+                        <div class="views" style="color: #9d9d9d;"><span style="color: #4025FB; font-weight: 600;">30,300,00</span> Views </div>
+                    </div>
+                    <div class="imp_btn">
+                        <a href="">Play Now</a>
+                        <a href="review.html?game_id=01">Review</a>
+                    </div>
+                </div>
+            </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- only for authnetic user------------------------------------------------------- -->
+    <div id="auth_user">
+        <div class="background_gamefill">
+            <div class="auth tilt" id="addgame">
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section -------------------------------------------------------- -->
+    <a href="ultimate_game.html" style="text-decoration: none;">
+<div id="ultimate_game_page" class="button ultimate_game_page" style="margin-top: 50px; color: white; cursor: pointer;">Ultimate Games </div></a>
+<div id="logout_on" class="logout" onclick="logout_l()"><img src="photos/power-off.png" alt=""></div>
+<footer class="footer" id="main_footer">
+    <div id="sec-1" class="sec">
+            <a href="main.html"><img src="photos/logo.png" alt=""><h2>Gamealine</h2></a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit arcu, scelerisque dignissim massa quis, mattis facilisis erat. Aliquam erat volutpat. Sed efficitur diam ut interdum ultricies onsectetur adipisicing elit. Tempora, suscipit. </p>
+    </div>
+    <div id="sec-2" class="sec">
+        <div class="single_footer_part">
+            <h4>Contact Info</h4>
+            <p>Address :2/4 raj bhavan staff quarter.
+                Gandhinagar, Gujarat.</p>
+            <p>Phone : +91 6354783970</p>
+            <p>Email : aman.k4203@gmail.com</p>
+        </div>
+    </div>
+    <div id="sec-3" class="sec">
+        <div class="single_footer_part">
+            <h4>Important Link</h4>
+            <ul class="list-unstyled">
+                <li><a href=""> Blog Gamebase</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="">My Account</a></li>
+                <li><a href="">New game Info</a></li>
+                <li><a href="ultimate_game.html">ultimate game list</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="sec-4" class="sec">
+        <div class="single_footer_part">
+            <h4>Newsletter</h4>
+            <p>New Games are Going to Be lounched soon it Have the most exciting games with some different simulations
+                for users Awesome experience 
+            </p>
+            <div id="mc_embed_signup">
+                <form target="_blank">
+                    <input type="email" name="EMAIL" id="newsletter-form-email" placeholder="Email Address" class="placeholder hide-on-focus" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Email Address '">
+                    <button type="submit" name="submit" id="newsletter-submit" class="email_icon newsletter-submit button-contactForm">&aring;</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copyright_text">
+<p class="copy_text">
+Copyright © 2021 All rights reserved | This template is made by<a href="#" target="_blank">Aman Kanojiya</a></p>
+</div>
+</body>
+<script src="js/vanilla-tilt.js"></script>
+<!-- <script src="js/aos.js"></script> -->
+<!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBAxH0iNVGmQTxx0loEDchJEwrYi11geFY",
+    authDomain: "game-base-4203.firebaseapp.com",
+    projectId: "game-base-4203",
+    storageBucket: "game-base-4203.appspot.com",
+    messagingSenderId: "614367861461",
+    appId: "1:614367861461:web:1bf7c81c661a8632ffa05c",
+    measurementId: "G-FQ3C0PPKPQ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/main.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare:true,
+            "max-glare":0.8
+        });
+    VanillaTilt.init(document.querySelectorAll(".tilt"), {
+            max: 10,
+            speed: 400,
+            glare:true,
+            "max-glare":0.4
+        });
+</script>
+<script src="js/search.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/nav.js"></script>
+</html>
